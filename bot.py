@@ -87,7 +87,7 @@ async def _callbacks(bot, cb: CallbackQuery):
     else:
       tt = resp.url
     ttid = dirs+tt.split('/')[-1]
-    r = requests.get('https://api.reiyuura.me/api/dl/tiktok?url='+tt)
+    r = requests.get('https://api.botcahx.live/api/dowloader/tiktok?url='+tt+'&apikey=ssGggjTC')
     result = r.text
     rs = json.loads(result)
     link = rs['result']['nowm']
@@ -110,7 +110,7 @@ async def _callbacks(bot, cb: CallbackQuery):
     else:
       tt = resp.url
     ttid = dirs+tt.split('/')[-1]
-    r = requests.get('https://api.reiyuura.me/api/dl/tiktok?url='+tt)
+    r = requests.get('https://api.botcahx.live/api/dowloader/tiktok?url='+tt+'&apikey=ssGggjTC')
     result = r.text
     rs = json.loads(result)
     link = rs['result']['wm']
@@ -133,7 +133,7 @@ async def _callbacks(bot, cb: CallbackQuery):
     else:
       tt = resp.url
     ttid = dirs+tt.split('/')[-1]
-    r = requests.get('https://api.reiyuura.me/api/dl/tiktok?url='+tt)
+    r = requests.get('https://api.botcahx.live/api/dowloader/tiktok?url='+tt+'&apikey=ssGggjTC')
     result = r.text
     rs = json.loads(result)
     link = rs['result']['wm']
