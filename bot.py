@@ -12,7 +12,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 
 # Configs
 API_HASH = os.environ['API_HASH']
-APP_ID = int(os.environ['APP_ID'])
+APP_ID = os.environ['APP_ID']
 BOT_TOKEN = os.environ['BOT_TOKEN']
 downloads = './downloads/{}/'
 
