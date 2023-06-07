@@ -28,9 +28,9 @@ START_BUTTONS=[
 DL_BUTTONS=[
     [
         InlineKeyboardButton("No Watermark", callback_data="thumbnail"),
-        InlineKeyboardButton("Watermark", callback_data="avatar"),
+        InlineKeyboardButton("Watermark", callback_data="AVATAR"),
     ],
-    [InlineKeyboardButton("Audio", callback_data="link")],
+    [InlineKeyboardButton("Audio", callback_data="LINK")],
 ]
 
 
