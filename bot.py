@@ -27,10 +27,10 @@ START_BUTTONS=[
 
 DL_BUTTONS=[
     [
-        InlineKeyboardButton("No Watermark", callback_data="nowm"),
-        InlineKeyboardButton("Watermark", callback_data="wm"),
+        InlineKeyboardButton("No Watermark", callback_data="thumbnail"),
+        InlineKeyboardButton("Watermark", callback_data="avatar"),
     ],
-    [InlineKeyboardButton("Audio", callback_data="audio")],
+    [InlineKeyboardButton("Audio", callback_data="link")],
 ]
 
 
@@ -87,7 +87,7 @@ async def _callbacks(bot, cb: CallbackQuery):
     else:
       tt = resp.url
     ttid = dirs+tt.split('/')[-1]
-    r = requests.get('https://api.botcahx.live/api/dowloader/tiktok?url='+tt+'&apikey=ssGggjTC')
+    r = requests.get('https://api.lolhuman.xyz/api/tiktok?apikey=fdaf48f489230bb7ee508a9c&url='+tt)
     result = r.text
     rs = json.loads(result)
     link = rs['result']['nowm']
@@ -110,7 +110,7 @@ async def _callbacks(bot, cb: CallbackQuery):
     else:
       tt = resp.url
     ttid = dirs+tt.split('/')[-1]
-    r = requests.get('https://api.botcahx.live/api/dowloader/tiktok?url='+tt+'&apikey=ssGggjTC')
+    r = requests.get('https://api.lolhuman.xyz/api/tiktok?apikey=fdaf48f489230bb7ee508a9c&url='+tt)
     result = r.text
     rs = json.loads(result)
     link = rs['result']['wm']
@@ -133,7 +133,7 @@ async def _callbacks(bot, cb: CallbackQuery):
     else:
       tt = resp.url
     ttid = dirs+tt.split('/')[-1]
-    r = requests.get('https://api.botcahx.live/api/dowloader/tiktok?url='+tt+'&apikey=ssGggjTC')
+    r = requests.get('https://api.lolhuman.xyz/api/tiktok?apikey=fdaf48f489230bb7ee508a9c&url='+tt)
     result = r.text
     rs = json.loads(result)
     link = rs['result']['wm']
